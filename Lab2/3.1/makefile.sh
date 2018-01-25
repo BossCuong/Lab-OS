@@ -1,5 +1,7 @@
+gcc -E hello.c
+
+gcc -S hello.c
+
 gcc -c hello.c
 
-gcc hello.o -o hello
-
-rm hello.o
+gcc -o hello hello.c
