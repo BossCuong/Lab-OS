@@ -6,7 +6,8 @@ int main(int argc, char *argv[])
 {
     int arr[MAX_SIZE];
     int size;
-    readFile(argv[1], arr, &size);
+    char* fName = "numbers.txt";
+    readFile(fName, arr, &size);
 
     pid_t pid = fork();
     int cnt = 0;
