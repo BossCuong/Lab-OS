@@ -4,7 +4,7 @@
 int main()
 {
     int *p;
-    size_t size = 16, align = 64;
+    size_t size = 16, align = 4;
     p = aligned_malloc(size, align);
 
     if (!p)
